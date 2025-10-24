@@ -160,12 +160,12 @@ After reviews were completed content was migrated to GitHub and published in pro
 form. While part of this process was automated, considerable manual effort was
 required to curate references to external sources, cross-references between sections,
 and other metadata. GitHub issues and checklists were used to track each chapters’
-publication progress, in close collaboration with chapter leads.^[See this [checklist](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues/138)
-as one example within the [collection](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues/58) of chapter checklists. Special thanks to Committee member Will Beasley for his
+publication progress, in close collaboration with chapter leads.^[See this [checklist](https://github.com/rwdcollaborative/guide-to-n3c-v1/issues/138)
+as one example within the [collection](https://github.com/rwdcollaborative/guide-to-n3c-v1/issues/58) of chapter checklists. Special thanks to Committee member Will Beasley for his
 technical expertise and development of this publication workflow!]
 
-As a living document, changes and new content are managed via [GitHub](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1),
-with needs tracked via [issues](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues?q=is%3Aissue). See the [How to Contribute](#sec-welcome-contribute) section for details.
+As a living document, changes and new content are managed via [GitHub](https://github.com/rwdcollaborative/guide-to-n3c-v1),
+with needs tracked via [issues](https://github.com/rwdcollaborative/guide-to-n3c-v1/issues?q=is%3Aissue). See the [How to Contribute](#sec-welcome-contribute) section for details.
 
 
 ### Software and Rendering Configuration {#sec-colophon-software}

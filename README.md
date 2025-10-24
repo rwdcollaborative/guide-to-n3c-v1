@@ -70,5 +70,5 @@ Versioning and Build Status
 Zenodo releases: [![DOI](https://zenodo.org/badge/415068439.svg)](https://zenodo.org/badge/latestdoi/415068439)
 
 <!-- badges: start -->
-GitHub Actions: [![Build Book](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/actions/workflows/build-book.yaml/badge.svg)](https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/actions/workflows/build-book.yaml)
+GitHub Actions: [![Build Book](https://github.com/rwdcollaborative/guide-to-n3c-v1/actions/workflows/build-book.yaml/badge.svg)](https://github.com/rwdcollaborative/guide-to-n3c-v1/actions/workflows/build-book.yaml)
 <!-- badges: end -->
