@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -15,6 +15,9 @@
 
 <title>8&nbsp; Introducing Enclave Analysis Tools – The Researcher's Guide to N3C</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -65,14 +68,14 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-befe23ebd2f54d8af2c8a89d1a1611f1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-724caef8845b26e714de047ae53f0c6b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-da3535df221a91e0de502531797a9071.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-724caef8845b26e714de047ae53f0c6b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-907a052735efa4ca00eccfb56c11825d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-e18e2b81164ae3e14383d340a9999b03.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-907a052735efa4ca00eccfb56c11825d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -494,7 +497,7 @@ background-size: cover;
     <div class="sidebar-title mb-0 py-0">
       <a href="../">The Researcher’s Guide to N3C</a> 
         <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/rwdcollaborative/guide-to-n3c-v1" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
     <div class="dropdown">
       <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
       <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
@@ -698,7 +701,7 @@ background-size: cover;
   <li><a href="#sec-tools-apps-lineage" id="toc-sec-tools-apps-lineage" class="nav-link" data-scroll-target="#sec-tools-apps-lineage"><span class="header-section-number">8.4.7</span> Data Lineage (aka Monocle)</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/tools.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/tools.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/rwdcollaborative/guide-to-n3c-v1/edit/main/chapters/tools.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rwdcollaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/rwdcollaborative/guide-to-n3c-v1/blob/main/chapters/tools.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -722,7 +725,7 @@ Figure&nbsp;8.1: High-level overview of an N3C project.
 </figcaption>
 </figure>
 </div>
-<p>Due to the complexities of analyzing large clinical datasets, such as that compiled in the Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question. <a href="#fig-tools-010-intro-to-tools" class="quarto-xref">Figure&nbsp;<span>8.1</span></a> provides a high-level overview of the process behind forming a team and performing research using the Enclave, along with the recommended field expertise needed during each phase. It is important to note that while certain team members may take the lead at various stages, a project benefits if all team members are engaged to some degree at all phases. Managing these collaborative and multi-faceted projects requires good recordkeeping. The <a href="../chapters/tools.html#sec-tools-apps-protocol">N3C Protocol Pad</a> is designed specifically for N3C research and to aid teams in designing, implementing, reporting, and publishing their work in a Findable, Accessible, Interoperable, and Reusable (FAIR) manner <span class="citation" data-cites="wilkinson_2016">(<a href="../references.html#ref-wilkinson_2016" role="doc-biblioref">Wilkinson et al., 2016</a>)</span> (see also <a href="https://www.go-fair.org/fair-principles/" class="uri">https://www.go-fair.org/fair-principles/</a>). Thus it is recommended that you utilize this tool throughout the implementation of your project.</p>
+<p>Due to the complexities of analyzing large clinical datasets, such as that compiled in the Enclave, it is common, and many times necessary, to work in multidisciplinary collaborative teams to answer a research question. <a href="#fig-tools-010-intro-to-tools" class="quarto-xref">Figure&nbsp;<span>8.1</span></a> provides a high-level overview of the process behind forming a team and performing research using the Enclave, along with the recommended field expertise needed during each phase. It is important to note that while certain team members may take the lead at various stages, a project benefits if all team members are engaged to some degree at all phases. Managing these collaborative and multi-faceted projects requires good recordkeeping. The <a href="../chapters/tools.html#sec-tools-apps-protocol">N3C Protocol Pad</a> is designed specifically for N3C research and to aid teams in designing, implementing, reporting, and publishing their work in a Findable, Accessible, Interoperable, and Reusable (FAIR) manner <span class="citation" data-cites="wilkinson_2016">(<a href="../references.html#ref-wilkinson_2016" role="doc-biblioref"><span class="nocase">Wilkinson et al.</span>, 2016</a>)</span> (see also <a href="https://www.go-fair.org/fair-principles/" class="uri">https://www.go-fair.org/fair-principles/</a>). Thus it is recommended that you utilize this tool throughout the implementation of your project.</p>
 <p>A research project in N3C starts with organizing a team with the required expertise (clinical, informatics, statistical, etc), followed by defining clinical questions around COVID-19 and characterizing the cohorts needed to answer each, i.e., clinical phenotyping. Because the N3C contains real-world EHR data that is harmonized from multiple data models and dozens of institutions, some information needed to identify an ideal clinical phenotype may be missing or incomplete. Thus, it is important to assess what information is needed to create an N3C computational phenotype for your cohorts. This could include using conditions, labs, or medications as proxies to identify a cohort if some information is not available. Generally, clinicians or other subject matter experts are leading this process with informaticians/data scientists providing guidance on what information is included in the Enclave, what is missing or sparse, and overall data quality (see <a href="practices.html" class="quarto-xref"><span>Chapter 9</span></a>). Some data quality aspects can be easily obtained through the use of <a href="../chapters/tools.html#sec-tools-store-ll">Logic Liaison Templates</a> accessible through the <a href="../chapters/tools.html#sec-tools-store">N3C Knowledge Store</a>. The Enclave application <a href="../chapters/tools.html#sec-tools-apps-contour">Contour</a> can be utilized at this stage, along with <a href="../chapters/tools.html#sec-tools-apps-workbook">Code Workbooks</a> for quick querying and visualizing of the data. Additionally, <a href="../chapters/tools.html#sec-tools-apps-fusion">Fusion</a> can be utilized to keep track of developed concept sets and utilized to easily input them into Logic Liaison Templates.</p>
 <p>The generation of a computational phenotype overlaps with the generation of concept sets (see <a href="understanding.html" class="quarto-xref"><span>Chapter 7</span></a> for details), and is often a cyclical process. Well-vetted concept sets are key to obtaining robust cohorts, thus, having a team member familiar with the organization of data and the OMOP vocabulary, such as a data liaison, who can work closely with a clinician is beneficial. Concept set generation can be done using the Enclave Concept Set Browser, or externally through OHDSI ATLAS.</p>
 <p>Informaticians and data scientists then utilize the computational phenotype and vetted concept sets to generate fact tables (i.e., datasets containing information about each patient like demographics, comorbidities, lab results, etc) for the cohorts of interest using the raw OMOP tables, which requires specific knowledge of how to work with large datasets in a Spark environment. Fact tables include all the information needed to characterize a cohort and perform downstream analyses to answer your research questions. Facts can include patient demographics, socioeconomic status, COVID status/severity, medications, comorbidities, etc. Logic Liaison Fact Table Templates can provide you a boost by allowing fast and robust generation of commonly used facts using N3C-vetted concept sets and peer-reviewed code as a starter table. You can then append this base fact table to include project-specific facts needed for analyses. <a href="#fig-tools-060-ll-template-1" class="quarto-xref">Figure&nbsp;<span>8.6</span></a> and <a href="#fig-tools-070-ll-template-2" class="quarto-xref">Figure&nbsp;<span>8.7</span></a> in the N3C Knowledge Store section of this chapter provide a more detailed view of how Logic Liaison Templates can be integrated into a project to expedite fact table generation. The generation of the original fact tables from raw OMOP tables can be done using Code Workbooks (<a href="#sec-tools-apps-workbook" class="quarto-xref"><span>Section 8.4.3</span></a>) or Code Repositories (<a href="#sec-tools-apps-repo" class="quarto-xref"><span>Section 8.4.4</span></a>).</p>
@@ -764,7 +767,7 @@ Figure&nbsp;8.3: <code>concept_set_members</code> table.
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Real-World-Data Tip
+<span class="screen-reader-only">Tip</span>Real-World-Data Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -855,7 +858,7 @@ Figure&nbsp;8.7: Example Application of Logic Liaison Ancillary Quality Template
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Real-World-Data Tip
+<span class="screen-reader-only">Tip</span>Real-World-Data Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1076,7 +1079,7 @@ Figure&nbsp;8.16: Example Data Lineage Visualization.
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Additional Chapter Details
+<span class="screen-reader-only">Note</span>Additional Chapter Details
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1093,7 +1096,7 @@ Charlson, M. E., Pompei, P., Ales, K. L., &amp; MacKenzie, C. R. (1987). A new m
 Palantir. (2023). <em>Documentation: Code repositories overview</em>. <a href="https://www.palantir.com/docs/foundry/code-repositories/overview/" class="uri">https://www.palantir.com/docs/foundry/code-repositories/overview/</a>.
 </div>
 <div id="ref-wilkinson_2016" class="csl-entry" role="listitem">
-Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Silva Santos, L. B. da, Bourne, P. E., et al. (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
+<span class="nocase">Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Silva Santos, L. B. da, Bourne, P. E., et al.</span> (2016). The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, <em>3</em>. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>
 </div>
 </div>
 </section>
@@ -1164,13 +1167,14 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., B
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1537,7 +1541,7 @@ Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., B
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/edit/main/chapters/tools.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/national-clinical-cohort-collaborative/guide-to-n3c-v1/blob/main/chapters/tools.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rwdcollaborative/guide-to-n3c-v1/edit/main/chapters/tools.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rwdcollaborative/guide-to-n3c-v1/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/rwdcollaborative/guide-to-n3c-v1/blob/main/chapters/tools.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>Part of <a href="https://covid.cd2h.org/">NIH NCATS</a>.</p>
 </div>
