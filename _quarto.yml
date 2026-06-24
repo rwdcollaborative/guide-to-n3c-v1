@@ -2,7 +2,6 @@ project:
   type: book
 
 bibliography: references.bib
-
 google-scholar: true
 
 # This is hack to make the
