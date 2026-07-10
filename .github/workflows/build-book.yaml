@@ -1,5 +1,6 @@
 # Adapted from
 #  * https://github.com/quarto-dev/quarto-actions/blob/main/examples/quarto-publish-example.yml on 2022-11-06
+name: Render and Publish
 
 on:
   push:
@@ -9,7 +10,10 @@ on:
     branches:
       - main
 
-name: Render and Publish
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-deploy:
